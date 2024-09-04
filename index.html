@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sheet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Question Palette -->
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Question Palette
+                </div>
+                <div class="card-body">
+                    <div class="question-palette">
+                        <!-- Clickable question numbers -->
+                        <button class="btn btn-outline-primary question-btn" data-question="0">1</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="1">2</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="2">3</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="3">4</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="4">5</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="5">6</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="6">7</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="7">8</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="8">9</button>
+                        <button class="btn btn-outline-primary question-btn" data-question="9">10</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Score
+                </div>
+                <div class="card-body">
+                    <input type="range" class="custom-range" id="scoreRange" min="10" max="100" step="10" value="10">
+                    <p>Score: <span id="scoreValue">10</span></p>
+                    <div class="progress">
+                        <div id="progressBar" class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100">10%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Content -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    Question Content
+                </div>
+                <div class="card-body">
+                    <p id="question-content">Please click on a question number above to view the question content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>

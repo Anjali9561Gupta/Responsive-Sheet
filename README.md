@@ -3,7 +3,7 @@
 This project is a JavaScript Quiz Response Sheet built using HTML, CSS, JavaScript, jQuery, and Bootstrap. 
 The application features a dynamic question palette with clickable buttons to navigate through random JavaScript questions. Each question displays its corresponding answer upon selection. The application also includes a score slider that allows users to set a score ranging from 10 to 100 with a difference of 10 points. The progress bar updates dynamically based on the selected score.
 
-Demo Link-https://responsive-sheet.vercel.app/
+# Demo Link-https://responsive-sheet.vercel.app/
 
 ## Features
 
